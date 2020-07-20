@@ -1,4 +1,4 @@
-# poke-dex
+# vue-pokemons
 
 ## Project setup
 ```
