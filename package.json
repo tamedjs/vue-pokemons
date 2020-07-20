@@ -43,5 +43,8 @@
     "*.vue": [
       "vue-cli-service lint"
     ]
+  },
+  "resolutions": {
+    "eslint-loader": "2.1.2"
   }
 }
