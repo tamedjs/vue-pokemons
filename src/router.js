@@ -4,6 +4,13 @@ const router = new Router({
   mode: "history",
   routes: [
     {
+      path: "/",
+      name: "index",
+      redirect: {
+        name: "pokemons",
+      },
+    },
+    {
       path: "/pokemons",
       name: "pokemons",
       component: () => import("./components/Pokemons"),
