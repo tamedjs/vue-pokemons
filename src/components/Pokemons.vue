@@ -43,7 +43,6 @@
 </template>
 
 <script>
-import axios from "axios";
 import Pokemon from "./Pokemon";
 
 export default {
@@ -105,7 +104,6 @@ export default {
           this.busy = false;
         })
         .catch((err) => {
-          console.log(err);
           this.loading = false;
         });
     },
