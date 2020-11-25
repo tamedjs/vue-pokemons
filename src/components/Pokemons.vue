@@ -77,12 +77,8 @@ export default {
       this.getPokemons();
     },
     getPokemons() {
-      if (this.limit < 0) {
-        this.limit = 0;
-      }
-      if (this.offset < 0) {
-        this.offset = 0;
-      }
+      this.limit = this.limit < 0 ? 0 : this.limit;
+      this.offset = this.offset < 0 ? 0 : this.offset;
       const filters = {
         limit: this.limit.toString(),
         offset: this.offset.toString(),

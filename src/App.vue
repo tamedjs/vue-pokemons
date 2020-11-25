@@ -13,7 +13,7 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
-    <v-content>
+    <v-content :style="bodyStyle">
       <router-view :key="$route.fullPath || '/'"></router-view>
     </v-content>
   </v-app>
@@ -22,5 +22,12 @@
 <script>
 export default {
   name: "App",
+  computed:{
+    bodyStyle() {
+      return {
+        background: this.$route.fullPath === '/404' ? '#e5e5e5':'white'
+      }
+    }
+  }
 };
 </script>

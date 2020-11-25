@@ -23,7 +23,22 @@ const router = new Router({
       name: "pokemon-detail",
       component: () => import("./components/PokemonDetail"),
       meta: {
-        title: "Información del pokemon 123",
+        title: "Información del pokemon",
+      },
+    },
+    {
+      path: "/404",
+      name: "404",
+      component: () => import("./components/404"),
+      meta: {
+        title: "404",
+      },
+    },
+    {
+      path: "/*",
+      name: "404-redirect",
+      redirect: {
+        name: "404",
       },
     },
   ],

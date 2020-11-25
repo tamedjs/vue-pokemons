@@ -14,7 +14,7 @@
             <v-col :lg="9" :md="9" :sm="12">
               <v-tabs
                 v-model="tab"
-                background-color="deep-purple accent-4"
+                background-color="primary"
                 centered
                 dark
                 icons-and-text
